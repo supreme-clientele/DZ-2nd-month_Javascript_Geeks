@@ -24,7 +24,6 @@ function charCount(str, char) {
             count++;
         }
     }
-    
     return count;
 }
 
