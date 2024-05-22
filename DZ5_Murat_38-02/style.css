@@ -1,34 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin: 20px;
+    color: #1f2d3d;
 }
 
 .counter {
-    font-size: 48px;
+    font-size: 100px;
     margin: 20px;
+    font-weight: 700;
 }
 
 .buttons {
     display: flex;
-    gap: 10px;
-
-    text-transform: uppercase;
+    gap: 20px;
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid #333;
     background-color: white;
     border-radius: 5px;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 700;
 }
 
-button:active {
-    transform: scale(0.98);
+button:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
 }
