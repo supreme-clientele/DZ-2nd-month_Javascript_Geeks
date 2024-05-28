@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('loto-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin: 20px auto 27px;
+    background-color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+.numbers {
+    margin: 20px 0;
+}
+
+.number {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 5px;
+    font-size: 16px;
+    border: 1px solid #fff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #19a1ca;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
