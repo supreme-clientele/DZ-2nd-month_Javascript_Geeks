@@ -1,6 +1,6 @@
 function generateNumbers() {
     const numbersContainer = document.getElementById('numbers');
-    numbersContainer.innerHTML = ''; // Clear previous numbers
+    numbersContainer.innerHTML = '';
 
     for (let i = 0; i < 6; i++) {
         const number = Math.floor(Math.random() * 99) + 1;
